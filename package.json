@@ -3,6 +3,7 @@
   "author": "zedd3v",
   "version": "1.0.0",
   "private": true,
+  "license": "MIT",
   "description": "Converts Hiven snowflakes to timestamps",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
