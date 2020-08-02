@@ -1,26 +1,20 @@
 import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Header from './components/Header';
+import Content from './components/Content';
+import Footer from './components/Footer';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+export default function App(): JSX.Element {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="h-100">
+      <Container fluid className="h-100">
+        <Header logo={logo} />
+        <Content />
+        <Footer />
+      </Container>
     </div>
   );
 }
-
-export default App;
+// new Date(141959053227063348 / 4194304 + 1562544e6)
